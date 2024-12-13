@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="icon" href="src/imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <script src="src/Js/menu.js" defer></script>
+    <title>Davi Reis - Portifolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="interface">
+        <div class="logo">
+          <a href="#">
+            <img src="src/imagens/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <!--Logo-->
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portifolio">Projetos</a></li>
+          </ul>
+        </nav>
+        <div class="btn-contato">
+          <a href="#formulario">
+            <button>Contato</button>
+          </a>
+        </div>
+        <!--btn contato-->
+        <div class="btn-abrir-menu" id="btn-menu">
+          <i class="bi bi-list"></i>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <!--btn-fechar-->
+
+          <nav>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#portifolio">Projetos</a></li>
+              <li><a href="#formulario">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--menu-mobile-->
+        <div class="overlay-menu" id="overlay-menu"></div>
+      </div>
+      <!--Interface-->
+    </header>
+
+    <main>
+      <section class="topo-do-site" id="inicio">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site">
+              <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
+              <p>
+                Criatividade e inovação andam lado a lado. Com uma combinação
+                única de design impactante, funcionalidade intuitiva e
+                otimização para resultados, estou pronto para criar a presença
+                online dos seus sonhos.
+              </p>
+              <a
+                href="https://wa.me/5531995091462"
+                class="btn-whatsapp"
+                target="_blank"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                  alt="WhatsApp Logo"
+                />
+                Entre em Contato
+              </a>
+            </div>
+            <!--Txt-topo-site-->
+            <div class="img-topo-site">
+              <img
+                src="src/imagens/pessoa1.png"
+                alt="Foto de uma
+              pessoa"
+              />
+            </div>
+            <!--img-topo-site-->
+          </div>
+          <!--Flex-->
+        </div>
+        <!--Interface-->
+      </section>
+      <!--topo-do-site-->
+
+      <section class="skills" id="skills">
+        <div class="interface">
+          <h2 class="titulo">Minhas <span>Habilidades</span></h2>
+          <div class="flex">
+            <!-- HTML Skill -->
+            <div class="skill-box">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                alt="Logo HTML"
+              />
+              <p><strong>HTML</strong></p>
+            </div>
+
+            <!-- CSS Skill -->
+            <div class="skill-box">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                alt="Logo CSS"
+              />
+              <p><strong>CSS</strong></p>
+            </div>
+
+            <!-- JavaScript Skill -->
+            <div class="skill-box">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                alt="Logo JavaScript"
+              />
+              <p><strong>JavaScript</strong></p>
+            </div>
+
+            <!-- Python Skill -->
+            <div class="skill-box">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Logo Python"
+              />
+              <p><strong>Python</strong></p>
+            </div>
+
+            <!-- PHP Skill -->
+            <div class="skill-box">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="Logo PHP"
+              />
+              <p><strong>PHP</strong></p>
+            </div>
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--Skills-->
+
+      <section class="sobre" id="sobre">
+        <div class="interface">
+          <h2 class="titulo">SOBRE <span>MIM.</span></h2>
+          <div class="flex">
+            <div class="img-sobre">
+              <img src="src/imagens/foto1.jpg" alt="Foto da Parte Sobre mim" />
+            </div>
+            <!--img-sobre-->
+
+            <div class="txt-sobre">
+              <h2>MUITO PRAZER, <span> SOU DAVI REIS</span></h2>
+              <h3>DESENVOLVEDOR <span>FRONT-END</span></h3>
+              <p>
+                Sou estudante de Programação, tenho 18 anos e finalizando o
+                Ensino Médio, tomei a decisão de me tornar Programador Web
+                devido a minha paixão por computadores e tecnologia, aos meus 16
+                anos comecei a estudar sobre a área de Desenvolvimento Web e aos
+                meus 18 resolvi ingressar no mercado de trabalho com o sonho de
+                me tornar um Desenvolvedor Full-Stack Sênior.
+              </p>
+              <p>
+                E garanto um excelente projeto independente de seu desejo,
+                garanto conseguir transformar sua ideia em
+                <span>REALIDADE.</span>
+              </p>
+
+              <div class="btn-social">
+                <a
+                  href="https://www.instagram.com/davi_x.7?igsh=anFtanIybzZiNXB0"
+                  target="_blank"
+                  rel="external"
+                  ><button><i class="bi bi-instagram"></i></button
+                ></a>
+
+                <a
+                  href="https://www.linkedin.com/in/davi-reis-055890257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  rel="external"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+
+                <a
+                  href="https://github.com/Draken4417x"
+                  target="_blank"
+                  rel="external"
+                >
+                  <button>
+                    <i class="bi bi-github"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!--txt-sobre-->
+          </div>
+          <!--Flex-->
+        </div>
+        <!--Interface-->
+      </section>
+      <!--Sobre-->
+
+      <section class="portifolio" id="portifolio">
+        <div class="interface">
+          <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
+          <div class="flex">
+            <!-- Projeto 1 -->
+            <div
+              class="img-port"
+              style="background-image: url(src/imagens/calculadora.jpg)"
+            >
+              <div class="overlay"></div>
+              <div class="icons">
+                <a
+                  href="https://github.com/Draken4417x/Calculadora"
+                  target="_blank"
+                  class="icon github"
+                >
+                  <i class="bi bi-github"></i>
+                </a>
+                <a
+                  href="https://draken4417x.github.io/Calculadora/"
+                  target="_blank"
+                  class="icon eye"
+                >
+                  <i class="bi bi-eye"></i>
+                </a>
+              </div>
+              <div class="description">
+                "Calculadora simples e funcional desenvolvida com HTML, CSS e
+                JavaScript, marcando meu primeiro projeto no desenvolvimento
+                web."
+              </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div
+              class="img-port"
+              style="background-image: url(src/imagens/login.jpg)"
+            >
+              <div class="overlay"></div>
+              <div class="icons">
+                <a
+                  href="https://github.com/Draken4417x/Pagina-login"
+                  target="_blank"
+                  class="icon github"
+                >
+                  <i class="bi bi-github"></i>
+                </a>
+                <a
+                  href="https://draken4417x.github.io/Pagina-login/"
+                  target="_blank"
+                  class="icon eye"
+                >
+                  <i class="bi bi-eye"></i>
+                </a>
+              </div>
+              <div class="description">
+                Página de login com tema escuro desenvolvida para aprimorar
+                minhas habilidades em front-end, focando em design moderno e
+                responsividade.
+              </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div
+              class="img-port"
+              style="background-image: url(src/imagens/tekken.jpg)"
+            >
+              <div class="overlay"></div>
+              <div class="icons">
+                <a
+                  href="https://github.com/Draken4417x/Tekken"
+                  target="_blank"
+                  class="icon github"
+                >
+                  <i class="bi bi-github"></i>
+                </a>
+                <a
+                  href="https://draken4417x.github.io/Tekken/"
+                  target="_blank"
+                  class="icon eye"
+                >
+                  <i class="bi bi-eye"></i>
+                </a>
+              </div>
+              <div class="description">
+                Sistema de cards inspirado na franquia Tekken, com uma abordagem
+                visual semelhante aos cards de Pokémon, destacando um design
+                responsivo e interativo.
+              </div>
+            </div>
+
+            <!-- Projeto 4 -->
+            <div
+              class="img-port"
+              style="background-image: url(src/imagens/vingadores.jpg)"
+            >
+              <div class="overlay"></div>
+              <div class="icons">
+                <a
+                  href="https://github.com/Draken4417x/Avengers"
+                  target="_blank"
+                  class="icon github"
+                >
+                  <i class="bi bi-github"></i>
+                </a>
+                <a
+                  href="https://draken4417x.github.io/Avengers/"
+                  target="_blank"
+                  class="icon eye"
+                >
+                  <i class="bi bi-eye"></i>
+                </a>
+              </div>
+              <div class="description">
+                Site em estilo carrossel, destacando os principais heróis da
+                franquia Vingadores, com informações detalhadas e design
+                envolvente.
+              </div>
+            </div>
+
+            <!-- Projeto 5 -->
+            <div
+              class="img-port"
+              style="background-image: url(src/imagens/lojaonline.jpg)"
+            >
+              <div class="overlay"></div>
+              <div class="icons">
+                <a
+                  href="https://github.com/Draken4417x/Loja-online"
+                  target="_blank"
+                  class="icon github"
+                >
+                  <i class="bi bi-github"></i>
+                </a>
+                <a
+                  href="https://draken4417x.github.io/Loja-online/"
+                  target="_blank"
+                  class="icon eye"
+                >
+                  <i class="bi bi-eye"></i>
+                </a>
+              </div>
+              <div class="description">
+                Protótipo de loja online funcional, incluindo recursos como
+                histórico de vendas automatizado, sistema de gerenciamento de
+                estoque e exportação de dados em formato CSV.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="formulario" id="formulario">
+        <div class="interface">
+          <h2 class="titulo">FALE <span>COMIGO</span></h2>
+
+          <form method="post" action="src/php/envia.php">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Seu nome completo: "
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Seu email: "
+              required
+            />
+            <input
+              type="text"
+              name="telefone"
+              id="telefone"
+              placeholder="Seu numero: "
+            />
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+            <div class="btn-enviar"><input type="submit" value="Enviar" /></div>
+          </form>
+        </div>
+        <!--interface-->
+      </section>
+      <!--formulario-->
+    </main>
+
+    <footer>
+      <div class="interface">
+        <div class="line-footer">
+          <div class="flex">
+            <div class="logo-footer">
+              <img
+                src="src/imagens/logo.png"
+                alt=" minha logo pessoal DEVDK7"
+              />
+            </div>
+            <!--logo-footer-->
+            <div class="btn-social">
+              <a href="https://www.instagram.com/davi_x.7?igsh=anFtanIybzZiNXB0"
+                ><button><i class="bi bi-instagram"></i></button
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/davi-reis-055890257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                ><button><i class="bi bi-linkedin"></i></button
+              ></a>
+
+              <a href="https://github.com/Draken4417x">
+                <button>
+                  <i class="bi bi-github"></i>
+                </button>
+              </a>
+            </div>
+            <!--btn-social-->
+          </div>
+          <!--line-footer-->
+        </div>
+        <!--line-footer-->
+
+        <div class="line-footer borda">
+          <p>
+            <i class="bi bi-envelope-at-fill"></i>
+            <a href="mailto:reisdavi805@gmail.com">reisdavi805@gmail.com</a>
+          </p>
+        </div>
+        <!--line-footer-->
+      </div>
+      <!--interface-->
+    </footer>
+  </body>
+</html>

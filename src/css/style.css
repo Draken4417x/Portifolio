@@ -153,6 +153,7 @@ section.topo-do-site .flex {
   align-items: center;
   justify-content: center;
   gap: 90px;
+  flex-direction: column;
 }
 
 .topo-do-site h1 {
@@ -170,24 +171,35 @@ section.topo-do-site .flex {
   margin: 40px 0;
 }
 
-.topo-do-site .img-topo-site img {
-  position: relative;
-  animation: flutuar 2s ease-in-out infinite alternate;
+.container-topo {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes flutuar {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: 30px;
+.texto-animado {
+  font-size: 40px;
+  color: #ff0f10;
+  font-weight: bold;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 3px solid white; 
+  display: inline-block;
+  animation: blinkCursor 0.8s infinite;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
   }
 }
+
+
 .btn-whatsapp {
   display: inline-flex;
   align-items: center;
-  background-color: #ff0f10;
+  background-color: black;
   color: #fff;
+  border: #ff0f10 1px solid;
   padding: 10px 20px;
   border-radius: 25px;
   text-decoration: none;
@@ -374,10 +386,6 @@ section.portifolio .flex {
   margin: 0 auto;
 }
 
-/* Remove o efeito de zoom */
-.img-port:hover {
-  transform: none;
-}
 
 /* Estilo das descrições */
 .img-port .description {

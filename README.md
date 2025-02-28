@@ -1,7 +1,7 @@
 # Projeto Portifólio 
 
 Meu primeiro Portifólio profissional com:
-+ Imagem flutuante e animada
++ Texto Animado
 + Design Responsivo
 + Links funcionais de outros projetos
 + Formulário de contato

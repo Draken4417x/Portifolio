@@ -1,4 +1,4 @@
-const texto = "Olá! Bem Vindo ao meu Portifólio";
+const texto = "Dev Davi Reis";
 const velocidade = 150;
 let i = 0;
 

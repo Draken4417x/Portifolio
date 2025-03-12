@@ -36,7 +36,6 @@ form .btn-enviar input:hover {
 }
 
 /* Cabeçalho */
-
 header {
   padding: 40px 4%;
 }
@@ -52,7 +51,9 @@ header a {
   text-decoration: none;
   display: inline-block;
   transition: 0.2s;
+  font-size: 18px;
 }
+
 header nav.menu-desktop a:hover {
   color: #fff;
   transform: scale(1.05);
@@ -228,29 +229,43 @@ section.topo-do-site .flex {
   text-align: center;
   color: #fff;
   margin-bottom: 40px;
+  font-size: 28px;
 }
 
 #skills .titulo span {
   color: #ff0f10;
 }
 
-#skills .flex {
+/* Contêiner de rolagem */
+.scroll {
+  overflow: hidden;
+  width: 100%;
+  mask: linear-gradient(to right, transparent, white 15%, white 85%, transparent);
+  -webkit-mask: linear-gradient(to right, transparent, white 15%, white 85%, transparent);
+}
+
+/* Container interno que se move */
+.scroll__container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   gap: 20px;
+  width: max-content;
+  animation: scrollLoop 10s linear infinite;
 }
 
 #skills .skill-box {
-  margin: auto;
   background-color: #000;
   border: 1px solid #ff0f10;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  width: 14%;
+  width: 150px;
+  height: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #skills .skill-box:hover {
@@ -264,32 +279,20 @@ section.topo-do-site .flex {
 }
 
 #skills .skill-box p {
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
   margin-top: 10px;
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
-  #skills .skill-box {
-    width: 30%;
-  }
+/* Pausar animação ao passar o mouse */
+.scroll__container:hover {
+  animation-play-state: paused;
 }
 
-@media (max-width: 768px) {
-  #skills .skill-box {
-    width: 45%;
-  }
-}
-
-@media (max-width: 480px) {
-  #skills .skill-box {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  #skills .titulo {
-    font-size: 28px;
+/* Animação do scroll */
+@keyframes scrollLoop {
+  100% {
+    transform: translateX(calc(-50% - 5px));
   }
 }
 
@@ -353,9 +356,10 @@ section.sobre .titulo {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: none;
-  background-color: #ff0f10;
+  color: #ff0f10;
+  border: 1px solid #ff0f10;
   font-size: 30px;
+  background-color: #000;
   cursor: pointer;
   margin: 0 5px;
   transition: 0.2s;
@@ -557,7 +561,7 @@ footer .line-footer p i {
 }
 
 footer .line-footer p a {
-  color: #fff;
+  color: #ff0f10;
 }
 
 /*Responsivo */
@@ -603,9 +607,25 @@ footer .line-footer p a {
     width: 100%;
   }
 
-  /* Especialidades */
-  section.especialidades {
-    padding: 40px 8%;
+  /* Skills */
+  .scroll__container {
+    display: flex;
+    flex-direction: row; 
+    gap: 10px; 
+    width: max-content; 
+    animation: scrollLoop 15s linear infinite;
+  }
+    
+  .scroll {
+    overflow: hidden;
+    width: 100% ;
+  }
+  
+  /* Animação do scroll */
+  @keyframes scrollLoop {
+    100% {
+    transform: translateX(-100%);
+    }
   }
 
   /*Sobre*/
@@ -666,6 +686,10 @@ footer .line-footer p a {
     width: 40px;
     height: 40px;
     font-size: 20px;
+  }
+  
+  #skills .skill-box {
+    width: 45%;
   }
 
   .icons {

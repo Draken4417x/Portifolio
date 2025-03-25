@@ -194,12 +194,18 @@ section.topo-do-site .flex {
   }
 }
 
+.btn-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
-.btn-whatsapp {
+.btn-whatsapp, .btn-curriculo {
   display: inline-flex;
   align-items: center;
   background-color: black;
   color: #fff;
+  margin: 10px;
   border: #ff0f10 1px solid;
   padding: 10px 20px;
   border-radius: 25px;
@@ -208,6 +214,8 @@ section.topo-do-site .flex {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
+
+
 
 .btn-whatsapp img {
   width: 20px;
@@ -219,6 +227,7 @@ section.topo-do-site .flex {
   box-shadow: 0px 0px 8px #ff0f10;
   transform: scale(1.05);
 }
+
 
 /* Estilo Skills */
 #skills {
@@ -695,4 +704,4 @@ footer .line-footer p a {
   .icons {
     gap: 15px;
   }
-}
+    }

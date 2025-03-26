@@ -109,11 +109,11 @@
                 Entre em Contato
               </a>
               
-          <a href="src/imagens/currículo.pdf"
+          <a href="src/imagens/curriculo.pdf"
             class="btn-curriculo"
             target="_blank"
           >
-            Meu Cv
+            Baixar Currículo
           </a>
             </div>
             <!-- Btn-Container -->
@@ -433,6 +433,9 @@
       <div class="btn-enviar">
         <input type="submit" value="Enviar" />
         
+      <div id="alerta-sucesso" class="alerta" style="display:none;">
+        <p>Seu e-mail foi enviado com sucesso. Em breve, entraremos em contato!</p>
+       </div>
 <script>
   // Inicializa o EmailJS (substitua "SEU_USER_ID" pelo seu ID do EmailJS)
   (function () {
@@ -452,14 +455,32 @@
     };
 
     // Envia os dados para o EmailJS (substitua "SEU_SERVICE_ID" e "SEU_TEMPLATE_ID")
-    emailjs.send("service_fugilrh", "template_llsu4nu", params)
-      .then(function (response) {
-        alert("E-mail enviado com sucesso!");
-        document.getElementById("meuFormulario").reset(); // Limpa o formulário
-      }, function (error) {
-        alert("Erro ao enviar o e-mail. Tente novamente.");
-        console.log("Erro:", error);
-      });
+  emailjs.send("service_fugilrh", "template_llsu4nu", params)
+  .then(function (response) {
+    // Mostra o alerta de sucesso
+    const sucessoAlerta = document.getElementById("alerta-sucesso");
+    sucessoAlerta.style.display = "block"; // Torna o alerta visível
+
+    // Reseta o formulário
+    document.getElementById("meuFormulario").reset();
+
+    // Esconde o alerta após 5 segundos
+    setTimeout(() => {
+      sucessoAlerta.style.display = "none";
+    }, 5000);
+  }, function (error) {
+    const erroAlerta = document.createElement("div");
+    erroAlerta.classList.add("alerta");
+    erroAlerta.style.backgroundColor = "#dc3545"; // Cor vermelha para erro
+    erroAlerta.innerHTML = "<p><strong>Opa!</strong> Algo deu errado ao enviar o e-mail. Tente novamente.</p>";
+
+    // Exibe o alerta de erro no topo da página
+    document.body.prepend(erroAlerta);
+
+    // Esconde o alerta de erro após 5 segundos
+    setTimeout(() => {
+      erroAlerta.style.display = "none";
+    }, 5000);
   });
 </script>
                    </div>
@@ -512,3 +533,4 @@
     </footer>
   </body>
 </html>
+                  

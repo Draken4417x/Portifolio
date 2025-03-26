@@ -546,27 +546,6 @@ form .btn-enviar input {
   transition: 0.2s;
 }
 
-.alerta {
-    background-color: #28a745; /* Verde, para sucesso */
-    color: white;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.3s ease-in-out;
-}
-
-#alerta-sucesso p {
-    margin: 0;
-}
-
-#alerta-sucesso.hide {
-    opacity: 0;
-    visibility: hidden;
-}
-
 /*Estilo do Rodape */
 footer {
   padding: 40px 4%;
